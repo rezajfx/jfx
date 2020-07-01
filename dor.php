@@ -214,7 +214,7 @@ echo "\e[89mв–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
          echo color("nevy","в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬рџ”§ PIN GOPAY KAMU ADALAH = 159753 рџ”§в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬")."\n";
-         $data2 = '{"pin":"159753"}';
+         $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
          $otpsetpin = trim(fgets(STDIN));
