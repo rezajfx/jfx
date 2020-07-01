@@ -7,10 +7,10 @@ echo "\e[92mв–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–
 echo "\e[99m      \e[99m DORR GOPUD! Gunakan Dengan Bijak! \e[99m \n";
 echo "\e[99m   \e[99m                 @JFX-TEAM\e[99m \n";
 echo "\e[92m  ==============================================\n";
-echo "\e[94m  =\e[97m рџ¤ё  1. VOUCHER GOFOOD 20K MINBEL 30K вњ„1¤71пї„1¤77          рџ‡®рџ‡© \e[92m=\n";
-echo "\e[94m  =\e[94m рџ¤ё  2. VOUCHER GOFOOD 15K MINBEL 30K  вњ„1¤71пї„1¤77 рџ‡®рџ‡© \e[92m=\n";
-echo "\e[94m  =\e[97m рџ¤ё  3. VOUCHER GOFOOD 10K MINBEL 30K  вњ„1¤71пї„1¤77 рџ‡®рџ‡© \e[92m=\n";
-echo "\e[94m  =\e[94m рџ¤ё  4. VOUCHER DISKON Lainnya   вњ„1¤71пї„1¤77     рџ‡®рџ‡© \e[92m=\n";
+echo "\e[94m  =\e[97m   1. VOUCHER GOFOOD 20K MINBEL 30K вњ„1¤71пї„1¤77          рџ‡®рџ‡© \e[92m=\n";
+echo "\e[94m  =\e[94m   2. VOUCHER GOFOOD 15K MINBEL 30K  вњ„1¤71пї„1¤77 рџ‡®рџ‡© \e[92m=\n";
+echo "\e[94m  =\e[97m   3. VOUCHER GOFOOD 10K MINBEL 30K  вњ„1¤71пї„1¤77 рџ‡®рџ‡© \e[92m=\n";
+echo "\e[94m  =\e[94m   4. VOUCHER DISKON Lainnya   вњ„1¤71пї„1¤77     рџ‡®рџ‡© \e[92m=\n";
 echo "\e[91m  ==============================================\n";
 echo "\e[91mв–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬\n";
 echo "\e[99m Sudah Punya User Id (Y/N ?: ";	
@@ -91,7 +91,7 @@ echo "\e[89mв–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("nevy","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        echo color("nevy","\nв–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬рџ› AUTO REDEEM VOUCHER GOJEKрџ› в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬");
+        echo color("nevy","\==========AUTO REDEEM VOUCHER GOJEK ==========");
         echo "\n".color("nevy","рџ”’в–¶пёЏ Claim voucher A ");
         echo "\n".color("blue","вЏів–¶пё„1¤71пї„1¤77 Sabar");
         for($a=1;$a<=3;$a++){
@@ -213,7 +213,7 @@ echo "\e[89mв–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("nevy","в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬рџ”§ PIN GOPAY KAMU ADALAH = 159753 рџ”§в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬")."\n";
+         echo color("nevy","в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬рџ”§ PIN GOPAY KAMU ADALAH = 112233 рџ”§в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬")."\n";
          $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
